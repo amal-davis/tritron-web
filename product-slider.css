@@ -1,0 +1,106 @@
+.product-slider{
+    height: 255vh;
+    width: 100vw;
+    background-image: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: background-image 0.7s ease-in-out;
+}
+
+.product-slider-content{
+    height: auto;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: start;
+}
+
+.product-slider-product{
+    width: 116px;
+    aspect-ratio: 116/761;
+    z-index: 1;
+    transition: 0.7s;
+    --left: -12px;
+    --top: 0px;
+}
+
+.product-slider-product-img{
+    background: var(--url) var(--left) 0px, url('img/stickmockup.png');
+    width: 116px;
+    aspect-ratio: 116/761;
+    background-blend-mode: multiply;
+    mask-image: url('img/stickmockup.png');
+    mask-size: auto 100%;
+    transition: 0.7s;
+    transform: scale(1.5) rotate(0deg);
+    translate: -50% 23%;
+}
+
+.product-slider-component{
+    height: 100%;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+}
+
+.containerz {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardz {
+    transition: transform 0.5s ease-in-out, margin-left 0.5s ease-in-out;
+}
+
+.topz {
+    transform: translateY(-100px) translateX(100px);
+}
+
+.centerz {
+    transform: translateY(0) translateX(0);
+}
+
+.bottomz {
+    transform: translateY(100px) translateX(100px);
+}
+
+
+.cardz {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.5s ease-in-out;
+}
+
+.topz {
+    transform: translateY(-100px);
+    z-index: 1;
+}
+
+.centerz {
+    transform: translateY(0);
+    z-index: 2;
+}
+
+.bottomz {
+    transform: translateY(100px);
+    z-index: 1;
+}

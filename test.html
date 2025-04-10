@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="stats-section py-5" id="stats">
+        <div class="container">
+          <div class="row text-center">
+            <!-- Item 1 -->
+            <div class="col-6 col-md-2 offset-md-1 stat-item border-end">
+              <h3 class="count text-danger" data-target="26">0</h3>
+              <p>Market Share</p>
+            </div>
+      
+            <!-- Item 2 -->
+            <div class="col-6 col-md-2 stat-item border-end">
+              <h3 class="count text-danger" data-target="28">0</h3>
+              <p>Manufacturing Facilities</p>
+            </div>
+      
+            <!-- Item 3 -->
+            <div class="col-6 col-md-2 stat-item border-end mt-4 mt-md-0">
+              <h3 class="count text-danger" data-target="79">0</h3>
+              <p>Export Presence</p>
+            </div>
+      
+            <!-- Item 4 -->
+            <div class="col-6 col-md-2 stat-item border-end mt-4 mt-md-0">
+              <h3 class="count text-danger" data-target="3800">0</h3>
+              <p>Authorised Distributors</p>
+            </div>
+      
+            <!-- Item 5 -->
+            <div class="col-12 col-md-2 stat-item mt-4 mt-md-0">
+              <h3 class="count text-danger" data-target="205000">0</h3>
+              <p>Retailers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <script>
+        function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+  }
+
+  let animated = false;
+
+  function animateCounters() {
+    if (animated) return;
+    const counters = document.querySelectorAll('.count');
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const speed = 100; // smaller = faster
+        const increment = Math.ceil(target / speed);
+
+        if (count < target) {
+          counter.innerText = count + increment;
+          setTimeout(updateCount, 20);
+        } else {
+          counter.innerText = target.toLocaleString(); // formatted number
+        }
+      };
+      updateCount();
+    });
+    animated = true;
+  }
+
+  // Trigger on scroll
+  window.addEventListener('scroll', () => {
+    const statsSection = document.getElementById('stats');
+    if (isInViewport(statsSection)) {
+      animateCounters();
+    }
+  });
+    </script>
+</body>
+</html>

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>contact-us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product-slider.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+    <meta property="og:image" content="assets/og-image.png" />
+    <meta name="description" content="Triton Middle East is a high-tech sealant 
+                                          manufacturing company based in the UAE that
+                                          produces wide range of silicone sealants,
+                                          advanced hybrid PU sealants, acrylic sealants
+                                          and other specialty sealants and Protective 
+                                          Coatings.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&amp;display=swap" rel="stylesheet">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/animate.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/odometer.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome-pro.css">
+    <link rel="stylesheet" href="assets/css/vendor/spacing.css">
+    <link rel="stylesheet" href="assets/css/vendor/custom-font.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.38/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+</head>
+<style>
+
+.about-banner {
+  background-image: url(img/trion1c.jpg); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Adjust as needed */
+  position: relative;
+}
+
+.about-banner h1 {
+  font-size: 3rem;
+  z-index: 2;
+}
+
+/* Optional: add overlay if needed */
+.about-banner::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 1;
+}
+    .contact-section {
+      /* background-color: #fff; */
+      padding: 60px 0;
+    }
+    .contact-form input,
+.contact-form textarea {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  color: #ffffff;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #ffffff; /* White placeholder text */
+  opacity: 1;      /* Make sure it's fully visible */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #ffffff; /* Keep border white on focus */
+}
+input,
+textarea {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+  border-radius: 0 !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ffffff !important;
+  opacity: 0.7; /* slightly dimmed */
+}
+
+/* Autofill overrides for Chrome/Safari */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  color: #ffffff !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
+
+.contact-form button {
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 0;
+  border: 2px solid #fff;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+    .contact-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .contact-info-section {
+  background-color: #121212;
+  color: #fff;
+}
+
+.contact-info-section i {
+  color: white;
+}
+.icon-heading {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+</style>
+<body style="background-color: #121212;">
+ 
+    
+
+
+
+
+
+    <div class="backtotop-wrap cursor-pointer">
+        <svg class="backtotop-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Backtotop end -->
+
+    <!-- Offcanvas area start -->
+    <div class="fix">
+        <div class="offcanvas__area">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="assets/logo.png" alt="logo not found">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button class="offcanvas-close-icon animation--flip">
+                                <span class="offcanvas-m-lines">
+                                    <span class="offcanvas-m-line line--1"></span><span
+                                        class="offcanvas-m-line line--2"></span><span
+                                        class="offcanvas-m-line line--3"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mobile-menu fix"></div>
+                    <div class="offcanvas__social">
+                        <h3 class="offcanvas__title mb-20">Subscribe & Follow</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://pinterest.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://linkedin.com/"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+    <div class="offcanvas__overlay-white"></div>
+    <!-- Offcanvas area end -->
+
+    <!-- Header area start -->
+    <header>
+        <div id="header-sticky" class="header header-2">
+            <div class="container">
+                <div class="mega__menu-wrapper p-relative">
+                    <div class="header__main header2__main">
+                        <div class="header__left">
+                            <div class="header-1__logo">
+                                <a href="#">
+                                    <div class="logo">
+                                        <img src="assets/logo.png" alt="logo not found" class="img-fluid" >
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header__middle header-2__middle">
+                            <div class="mean__menu-wrapper d-none d-xl-block">
+                                <div class="main-menu main-menu-2">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li class=" active">
+                                                <a href="javascript:void(0)">Home</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="javascript:void(0)">About Us</a>
+                                            </li>
+                                            <li class="has-dropdown">
+                                                <a href="javascript:void(0)">Products</a>
+                                                <ul class="submenu">
+                                                    <li><a href="#">SEALANTS</a></li>
+                                                    <li><a href="#">PU Form</a></li>
+                                                    <li><a href="#">ADHESIVE</a></li>
+                                                    <li><a href="#">TAPES</a></li>
+                                                    <li><a href="#">ASSOCIATED PRODUCTS</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="">
+                                                <a href="javascript:void(0)">CAREERS</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">REGISTER</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">LOGIN</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">DOWNLOADS</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__right header2__right">
+                            <div class="header__action d-flex align-items-center">
+                                <div class="header__btn-wrap d-none d-sm-inline-flex">
+                                    <a href="#" class="title-btn rr-btn btn-transparent"><span><i
+                                                class="fa-regular fa-arrow-right"></i></span>Contact</a>
+                                </div>
+                                <div class="header__hamburger ml-20 d-xl-none">
+                                    <div class="sidebar__toggle">
+                                        <button class="bar-icon">
+                                            <span style="background-color: white;"></span>
+                                            <span style="background-color: white;"></span>
+                                            <span style="background-color: white;"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <section class="about-banner d-flex align-items-center justify-content-center text-center">
+                <h1 class="text-white fw-bold">Contact Us</h1>
+              </section>
+            <section class="contact-section">
+                <div class="container">
+                  <div class="row align-items-center g-90">
+                    <!-- Left Image -->
+                    <div class="col-md-6 pt-5 ps-md-5" data-aos="fade-right">
+                      <img src="img/contact.png" alt="Contact" class="contact-image" style="width: 400px;">
+                    </div>
+              
+                    <!-- Right Form -->
+                    <div class="col-md-6 pt-5" data-aos="fade-left">
+                      <h3 class="fw-bold mb-4">Send us a message</h3>
+                      <form class="contact-form">
+                        <div class="row g-3">
+                          <div class="col-md-6">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Full Name">
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label">Phone</label>
+                            <input type="tel" class="form-control" placeholder="Phone">
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Email Address">
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label">Country (optional)</label>
+                            <input type="text" class="form-control" placeholder="Country">
+                          </div>
+                          <div class="col-12">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="4" placeholder="Type Your Inquiry Here.."></textarea>
+                          </div>
+                          <div class="col-12">
+                            <button type="submit" class="btn w-100 mt-3">Submit</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
+              <section class="contact-info-section py-5 text-white mt-5" data-aos="fade-up">
+                <div class="container">
+                  <div class="row">
+              
+                    <!-- Left Column - Enquiries -->
+                    <div class="col-md-6 mb-4 pt-5">
+                      <h5 class="fw-bold mt-5">Enquiries</h5>
+                      <p class="text-white mt-3">Reach us at <a href="mailto:mail@rarfincare.com" class="text-white text-decoration-underline">mail@rarfincare.com</a> and we shall get back to you asap</p>
+              
+                      <h5 class="fw-bold mt-5">Working at RAR FINCARE</h5>
+                      <p class="text-white mt-3">Visit our careers page or send us an email at <a href="mailto:mail@rarfincare.com" class="text-white text-decoration-underline">mail@rarfincare.com</a></p>
+              
+                      <h5 class="fw-bold mt-5">Office Timings</h5>
+                      <p class="text-white mt-3">Open during 10:00 AM to 6:00 PM, <br> Monday to Saturday</p>
+                    </div>
+              
+                    <!-- Right Column - Contact Details -->
+                    <div class="col-md-6 pt-5">
+                      <div class="d-flex align-items-start mb-5 mt-5">
+                        <i class="fas fa-map-marker-alt fa-lg me-3 mt-4"></i>
+                        <div>
+                          <h5 class="fw-bold">Corporate address</h5>
+                          <p class="text-white">RAR Fincare Limited, New No.33, Old No.8<br>Venkatesan Street, T-Nagar, Chennai, 600017</p>
+                        </div>
+                      </div>
+              
+                      <div class="d-flex align-items-start mb-5 mt-5">
+                        <i class="fas fa-phone-alt fa-lg me-3 mt-4"></i>
+                        <div>
+                          <h5 class="fw-bold">Phone</h5>
+                          <p class="text-white">044 4949 1305</p>
+                        </div>
+                      </div>
+              
+                      <div class="d-flex align-items-start mb-5 mt-5">
+                        <i class="fas fa-share-alt fa-lg me-3 mt-4"></i>
+                        <div>
+                          <h5 class="fw-bold">Follow us</h5>
+                          <div class="d-flex gap-3 mt-4">
+                            <a href="#"><i class="fab fa-facebook-f" style="font-size: 28px; color: white; margin-right: 15px;"></i></a>
+<a href="#"><i class="fab fa-instagram" style="font-size: 28px; color: white; margin-right: 15px;"></i></a>
+<a href="#"><i class="fab fa-linkedin-in" style="font-size: 28px; color: white; margin-right: 15px;"></i></a>
+<a href="#"><i class="fab fa-youtube" style="font-size: 28px; color: white;"></i></a> <!-- No margin on last icon -->
+
+                          </div>
+                        </div>
+                      </div>
+              
+                    </div>
+              
+                  </div>
+                </div>
+              </section>
+
+
+
+
+              <!-- Google Map Section -->
+<div class="mt-5">
+    <div class="ratio ratio-16x9">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.363172913908!2d80.23441621528194!3d13.041387990819906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52679f71f3132f%3A0x1a1e65022fdb4f63!2sT%20Nagar%2C%20Chennai%2C%20Tamil%20Nadu%20600017!5e0!3m2!1sen!2sin!4v1649847572234!5m2!1sen!2sin"
+        width="100%"
+    height="300" 
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+  
+              
+
+
+               <!-- Footer area start -->
+            <footer class="mt-5">
+                <section class="footer overflow-hidden p-relative z-1" style="background-color: black;">
+                    <div class="container">
+                        <div class="row footer__wrap p-relative">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="footer__widget">
+                                    <div class="footer__logo mb-20">
+                                        <a href="#">
+                                            <img src="assets/logo.png" alt="logo not found">
+                                        </a>
+                                    </div>
+                                    <div class="footer__content">
+                                        <p class="dec">
+                                            We are a high-tech sealant manufacturing <br> company in the UAE, producing
+                                            a
+                                            wide <br> range of silicone and specialty sealants.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                <div class="footer__widget footer__widget-2th-left">
+                                    <div class="footerscroll-percentage__widget-title mb-30 mb-md-10 mb-sm-10 mb-xs-10">
+                                        <h4 class="mt-md-0">PAGES</h4>
+                                    </div>
+                                    <div class="footer__link">
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="fa-solid fa-period"></i>
+                                                    HOME
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa-solid fa-period"></i>
+                                                    ABOUT US
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa-solid fa-period"></i>
+                                                    CAREERS
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                <div class="footer__widget footer__widget-3th-left">
+                                    <div class="footer__widget-title mb-30 mb-md-10 mb-sm-10 mb-xs-10">
+                                        <h4>PRODUCTS</h4>
+                                    </div>
+                                    <div class="footer__link">
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="fa-solid fa-period"></i>
+                                                    SEALANTS
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa-solid fa-period"></i>
+                                                    PU FORMS
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa-solid fa-period"></i>
+                                                    ADHESIVE
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa-solid fa-period"></i>
+                                                    TAPES
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6 footer-others">
+                                <style>
+                                    .footer-others {
+                                        padding-left: 50px;
+                                    }
+
+                                    @media (max-width: 992px) {
+                                        .footer-others {
+                                            padding-left: 0px;
+                                        }
+                                    }
+                                </style>
+                                <div class="footer__widget footer__widget-3th-left">
+                                    <div class="footer__widget-title mb-30 mb-md-10 mb-sm-10 mb-xs-10">
+                                        <h4>OTHERS</h4>
+                                    </div>
+                                    <div class="footer__link">
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="fa-solid fa-period"></i>
+                                                    CONTACT
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa-solid fa-period"></i>
+                                                    LOGIN
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa-solid fa-period"></i>
+                                                    REGISTER
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa-solid fa-period"></i>
+                                                    DOWNLOADS
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom-wrapper">
+                        <div class="container">
+                            <div class="footer__bottom">
+                                <div class="footer__copyright">
+                                    <p>© <span id="currentYear"></span> Triton . All Rights Reserved. <a
+                                            href="#">Howincloud</a></p>
+                                </div>
+                                <script>
+                                    document.getElementById('currentYear').textContent = new Date().getFullYear();
+                                </script>
+                                <div class="footer__copyright-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-linkedin" style="font-size: 20px;"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-facebook" style="font-size: 20px;"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-whatsapp" style="font-size: 20px;"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-twitter" style="font-size: 20px;"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </footer>
+              
+        </div>
+     </div>
+
+
+
+     <div id="scroll-percentage"><span id="scroll-percentage-value"></span></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/vendor/chroma.min.js"></script>
+    <script src="assets/js/plugins/waypoints.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/meanmenu.min.js"></script>
+    <script src="assets/js/plugins/swiper.min.js"></script>
+    <script src="assets/js/plugins/gsap.js"></script>
+    <script src="assets/js/plugins/ScrollSmoother.js"></script>
+    <script src="assets/js/plugins/ScrollToPlugin.js"></script>
+    <script src="assets/js/plugins/ScrollTrigger.js"></script>
+    <script src="assets/js/plugins/SplitText.js"></script>
+    <script src="assets/js/plugins/wow.js"></script>
+    <script src="assets/js/vendor/magnific-popup.min.js"></script>
+    <script src="assets/js/vendor/type.js"></script>
+    <script src="assets/js/vendor/vanilla-tilt.js"></script>
+    <script src="assets/js/plugins/nice-select.min.js"></script>
+    <script src="assets/js/vendor/odometer.min.js"></script>
+    <script src="assets/js/vendor/jarallax.min.js"></script>
+    <script src="assets/js/vendor/jquery-ui.min.js"></script>
+    <script src="assets/js/vendor/jquery.counterup.min.js"></script>
+    <script src="assets/js/plugins/parallax-scroll.js"></script>
+    <script src="assets/js/plugins/jquery.countdown.min.js"></script>
+    <script src="assets/js/plugins/isotope-docs.min.js"></script>
+    <script src="assets/js/vendor/ajax-form.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="script.js"></script>
+    <script src="product-slider.js"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const lenis = new Lenis({
+                lerp: 0.8,
+                smooth: true
+            });
+
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+
+            requestAnimationFrame(raf);
+        });
+        AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true,     // only animate once
+  });
+    </script>
+</body>
+</html>
