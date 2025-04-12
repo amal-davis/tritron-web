@@ -27,7 +27,16 @@
     <link rel="stylesheet" href="assets/css/vendor/custom-font.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    
+
+
 
 
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.38/dist/lenis.min.js"></script>
@@ -35,77 +44,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
 </head>
-<style>
-    html, body {
-    overflow-x: hidden;
-}
-
-body{
-    font-family: "Poppins", serif;
-    overflow-x: hidden;
-    width: 100%;
-/*     padding-top: 80px; */
-
-}
-       .about-banner {
-  background-image: url(img/trion1c.jpg); /* Replace with your actual image path */
-  background-size: cover;
-  background-position: center;
-  height: 300px; /* Adjust as needed */
-  position: relative;
-}
-
-.about-banner h1 {
-  font-size: 3rem;
-  z-index: 2;
-}
-.product-card {
-  background-color: transparent;
-  border-bottom: 1px solid #333;
-}
-
-.product-content h5,
-.product-content p {
-  margin: 0;
-}
-
-.btn-outline-light {
-  border-radius: 0;
-}
-
-/* Optional: Smooth modal padding on small devices */
-@media (max-width: 576px) {
-  .modal-content {
-    padding: 1.5rem;
-  }
-
-  .modal-body img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .modal-body h4 {
-    font-size: 1.25rem;
-  }
-
-  .modal-body p {
-    font-size: 0.95rem;
-  }
-}
-.product-modal-img {
-  width: 20%;
-  max-width: 300px;
-}
-@media (max-width: 576px) {
-  .product-modal-img {
-    width: 40%;
-    max-width: 250px;
-  }
-}
-
-
-</style>
-<body style="background-color: #121212;">
+<body>
    
     
 
@@ -117,7 +56,7 @@ body{
     <!-- Backtotop end -->
 
     <!-- Offcanvas area start -->
-    <div class="fix">
+    <div class="fix main-navbar">
         <div class="offcanvas__area">
             <div class="offcanvas__wrapper">
                 <div class="offcanvas__content">
@@ -156,7 +95,7 @@ body{
     <!-- Offcanvas area end -->
 
     <!-- Header area start -->
-    <header>
+    <header class="main-navbar">
         <div id="header-sticky" class="header header-2">
             <div class="container">
                 <div class="mega__menu-wrapper p-relative">
@@ -203,6 +142,10 @@ body{
                                             <li>
                                                 <a href="#">DOWNLOADS</a>
                                             </li>
+                                            <li>
+                                                <button id="theme-toggle" class="btn btn-lg btn-light ms-3 text-dark">☀️ Day Mode</button>
+
+                                            </li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -238,8 +181,389 @@ body{
 
 
             <section class="about-banner d-flex align-items-center justify-content-center text-center">
-                <h1 class="text-white fw-bold">Products</h1>
+                <h1 class="main-navbar fw-bold">Products</h1>
               </section>
+
+
+              <div class="container my-5">
+                <div class="owl-carousel custom-carousel owl-theme">
+                  <div class="item">
+                    <div class="image-wrapper">
+                      <img src="img/tritron-banner.png" alt="Slide 1" class="img-fluid">
+                      <div class="overlay"></div>
+                      <div class="caption-wrapper">
+                        <!-- <div class="carousel-captions">
+                          <small>ANNOUNCEMENT</small>
+                          <h4>A New Krea</h4>
+                        </div> -->
+                        <div class="btn-wrap">
+                          <button class="read-btn">Read more</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="item">
+                    <div class="image-wrapper">
+                      <img src="img/tritron-banner2.png" alt="Slide 2" class="img-fluid">
+                      <div class="overlay"></div>
+                      <div class="caption-wrapper">
+                        <!-- <div class="carousel-captions">
+                          <small>UPDATE</small>
+                          <h4>Next Generation Tool</h4>
+                        </div> -->
+                        <div class="btn-wrap">
+                          <button class="read-btn">Read more</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="image-wrapper">
+                      <img src="img/tritron-banner3.png" alt="Slide 2" class="img-fluid">
+                      <div class="overlay"></div>
+                      <div class="caption-wrapper">
+                        <!-- <div class="carousel-captions">
+                          <small>UPDATE</small>
+                          <h4>Next Generation Tool</h4>
+                        </div> -->
+                        <div class="btn-wrap">
+                          <button class="read-btn">Read more</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="image-wrapper">
+                      <img src="img/tritron-banner4.png" alt="Slide 2" class="img-fluid">
+                      <div class="overlay"></div>
+                      <div class="caption-wrapper">
+                        <!-- <div class="carousel-captions">
+                          <small>UPDATE</small>
+                          <h4>Next Generation Tool</h4>
+                        </div> -->
+                        <div class="btn-wrap">
+                          <button class="read-btn">Read more</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="image-wrapper">
+                      <img src="img/tritron-banner5.png" alt="Slide 2" class="img-fluid">
+                      <div class="overlay"></div>
+                      <div class="caption-wrapper">
+                        <!-- <div class="carousel-captions">
+                          <small>UPDATE</small>
+                          <h4>Next Generation Tool</h4>
+                        </div> -->
+                        <div class="btn-wrap">
+                          <button class="read-btn">Read more</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="image-wrapper">
+                      <img src="img/tritron-banner6.png" alt="Slide 2" class="img-fluid">
+                      <div class="overlay"></div>
+                      <div class="caption-wrapper">
+                        <!-- <div class="carousel-captions">
+                          <small>UPDATE</small>
+                          <h4>Next Generation Tool</h4>
+                        </div> -->
+                        <div class="btn-wrap">
+                          <button class="read-btn">Read more</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Custom Controls -->
+<div class="owl-controls-manual d-none d-md-flex justify-content-end mt-3 me-4 position-absolute">
+    <button class="custom-prev"><i class="fas fa-chevron-left"></i></button>
+    <button class="custom-next"><i class="fas fa-chevron-right"></i></button>
+  </div>
+  
+                  
+              </div>
+ 
+              
+
+
+
+              <div class="container-fluid py-5" style="margin-top: 90px;">
+                <div class="row g-4">
+                  
+                  <!-- Category Card -->
+                  <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                    <div class="category-card d-flex align-items-center justify-content-between p-3 rounded-4 py-3 w-100 h-100">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-wrap me-3">
+                          <img src="img/Wall_Floor.png" alt="Icon" class="icon-img">
+                        </div>
+                        <div>
+                          <h6 class="fw-bold mb-1">Wall & Flooring</h6>
+                          <p class="mb-0 small text-white" style="font-size: 10px;">Solvent-free silane adhesive with strong grip for prefinished wood.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="open-btn btn btn-sm px-3 py-1">Open</button>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- Duplicate this block for other cards -->
+                  <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                    <div class="category-card d-flex align-items-center justify-content-between p-3 rounded-4 py-3 w-100 h-100">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-wrap me-3">
+                          <img src="img/Door_Window.png" alt="Icon" class="icon-img">
+                        </div>
+                        <div>
+                          <h6 class="fw-bold mb-1">Door & Window</h6>
+                          <p class="mb-0 small text-white" style="font-size: 10px;">Strong, solvent-free adhesive safe for all subfloors and prefinished wood.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="open-btn btn btn-sm px-3 py-1">Open</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                    <div class="category-card d-flex align-items-center justify-content-between p-3 rounded-4 py-3 w-100 h-100">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-wrap me-3">
+                          <img src="img/Concrete_Masonry.png" alt="Icon" class="icon-img">
+                        </div>
+                        <div>
+                          <h6 class="fw-bold mb-1">Concrete & Masonry</h6>
+                          <p class="mb-0 small text-white" style="font-size: 10px;">Fast-curing, UV-resistant polyurethane sealant with lasting durability.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="open-btn btn btn-sm px-3 py-1">Open</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                    <div class="category-card d-flex align-items-center justify-content-between p-3 rounded-4 py-3 w-100 h-100">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-wrap me-3">
+                          <img src="img/Bath_Kitchen.png" alt="Icon" class="icon-img">
+                        </div>
+                        <div>
+                          <h6 class="fw-bold mb-1">Bath & Kitchen</h6>
+                          <p class="mb-0 small text-white" style="font-size: 10px;">One-component silicone sealant with mold and mildew resistance.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="open-btn btn-sm btn btn-sm px-3 py-1">Open</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                    <div class="category-card d-flex align-items-center justify-content-between p-3 rounded-4 py-3 w-100 h-100">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-wrap me-3">
+                          <img src="img/Roof_Gutter.png" alt="Icon" class="icon-img">
+                        </div>
+                        <div>
+                          <h6 class="fw-bold mb-1">Roof & Gutter</h6>
+                          <p class="mb-0 small text-white" style="font-size: 10px;">Weather-resistant neutral cure silicone sealant for roofs and gutters.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="open-btn btn-sm btn btn-sm px-3 py-1">Open</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                    <div class="category-card d-flex align-items-center justify-content-between p-3 rounded-4 py-3 w-100 h-100">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-wrap me-3">
+                          <img src="img/HVAC_DUCT.png" alt="Icon" class="icon-img">
+                        </div>
+                        <div>
+                          <h6 class="fw-bold mb-1">Duct/HVAC</h6>
+                          <p class="mb-0 small text-white" style="font-size: 10px;">Water-based acrylic duct sealer with flexible, weather-resistant performance.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="open-btn btn-sm btn btn-sm px-3 py-1">Open</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                    <div class="category-card d-flex align-items-center justify-content-between p-3 rounded-4 py-3 w-100 h-100">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-wrap me-3">
+                          <img src="img/Automotive.png" alt="Icon" class="icon-img">
+                        </div>
+                        <div>
+                          <h6 class="fw-bold mb-1">Automotive</h6>
+                          <p class="mb-0 small text-white" style="font-size: 10px;">High-strength hybrid adhesive with excellent grip and easy application.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="open-btn btn-sm btn btn-sm px-3 py-1">Open</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                    <div class="category-card d-flex align-items-center justify-content-between p-3 rounded-4 py-3 w-100 h-100">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-wrap me-3">
+                          <img src="img/Passive_Fire_Protection.png" alt="Icon" class="icon-img">
+                        </div>
+                        <div>
+                          <h6 class="fw-bold mb-1">Passive Fire Protection</h6>
+                          <p class="mb-0 small text-white" style="font-size: 10px;">Non-flammable sealant with lasting flexibility and strong water resistance.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="open-btn btn-sm btn btn-sm px-3 py-1">Open</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                    <div class="category-card d-flex align-items-center justify-content-between p-3 rounded-4 py-3 w-100 h-100">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-wrap me-3">
+                          <img src="img/Health_Insulation.png" alt="Icon" class="icon-img">
+                        </div>
+                        <div>
+                          <h6 class="fw-bold mb-1">Heat Insulation</h6>
+                          <p class="mb-0 small text-white" style="font-size: 10px;">EASYFOAM is a triple-expanding, one-component polyurethane-based sealing foam.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="open-btn btn-sm btn btn-sm px-3 py-1">Open</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                    <div class="category-card d-flex align-items-center justify-content-between p-3 rounded-4 py-3 w-100 h-100">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-wrap me-3">
+                          <img src="img/Pool_Aqua.png" alt="Icon" class="icon-img">
+                        </div>
+                        <div>
+                          <h6 class="fw-bold mb-1">Pool & Aqua</h6>
+                          <p class="mb-0 small text-white" style="font-size: 10px;">Strong adhesive-sealant for underwater use in pools and water features.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="open-btn btn-sm btn btn-sm px-3 py-1">Open</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                    <div class="category-card d-flex align-items-center justify-content-between p-3 rounded-4 py-3 w-100 h-100">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-wrap me-3">
+                          <img src="img/Marine.png" alt="Icon" class="icon-img">
+                        </div>
+                        <div>
+                          <h6 class="fw-bold mb-1">Marine</h6>
+                          <p class="mb-0 small text-white" style="font-size: 10px;">High-modulus, one-component hybrid PU sealant and adhesive.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="open-btn btn-sm btn btn-sm px-3 py-1">Open</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                    <div class="category-card d-flex align-items-center justify-content-between p-3 rounded-4 py-3 w-100 h-100">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-wrap me-3">
+                          <img src="img/Weatherproof.png" alt="Icon" class="icon-img">
+                        </div>
+                        <div>
+                          <h6 class="fw-bold mb-1">Weatherproofing</h6>
+                          <p class="mb-0 small text-white" style="font-size: 10px;">One-component neutral cure silicone with excellent UV and weather resistance.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="open-btn btn-sm btn btn-sm px-3 py-1">Open</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                    <div class="category-card d-flex align-items-center justify-content-between p-3 rounded-4 py-3 w-100 h-100">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-wrap me-3">
+                          <img src="img/Structural_Glazing.png" alt="Icon" class="icon-img">
+                        </div>
+                        <div>
+                          <h6 class="fw-bold mb-1">Structural Glazing</h6>
+                          <p class="mb-0 small text-white" style="font-size: 10px;">High-modulus silicone for structural bonding of glass, metal, and more.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="open-btn btn-sm btn btn-sm px-3 py-1">Open</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                    <div class="category-card d-flex align-items-center justify-content-between p-3 rounded-4 py-3 w-100 h-100">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-wrap me-3">
+                          <img src="img/General_Purpose.png" alt="Icon" class="icon-img">
+                        </div>
+                        <div>
+                          <h6 class="fw-bold mb-1">General Purpose</h6>
+                          <p class="mb-0 small text-white" style="font-size: 10px;">Acid-cure silicone sealant with strong multi-surface adhesion.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="open-btn btn-sm btn btn-sm px-3 py-1">Open</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                    <div class="category-card d-flex align-items-center justify-content-between p-3 rounded-4 py-3 w-100 h-100">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-wrap me-3">
+                          <img src="img/Food_Grade.png" alt="Icon" class="icon-img">
+                        </div>
+                        <div>
+                          <h6 class="fw-bold mb-1">Food Grade</h6>
+                          <p class="mb-0 small text-white" style="font-size: 10px;">High-bond, neutral-cure sealant safe for food and potable water contact.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="open-btn btn-sm btn btn-sm px-3 py-1">Open</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                    <div class="category-card d-flex align-items-center justify-content-between p-3 rounded-4 py-3 w-100 h-100">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-wrap me-3">
+                          <img src="img/Mirror.png" alt="Icon" class="icon-img">
+                        </div>
+                        <div>
+                          <h6 class="fw-bold mb-1">Mirror</h6>
+                          <p class="mb-0 small text-white" style="font-size: 10px;">Neutral-cure silicone sealant for flexible mirror bonding.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="open-btn btn-sm btn btn-sm px-3 py-1">Open</button>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- Add more cards similarly... -->
+              
+                </div>
+              </div>
+              
+              
+              
 
               <section class="products py-5">
                 <div class="container">
@@ -254,9 +578,10 @@ body{
                         <div class="product-content ms-md-4 text-white">
                           <h5 class="mt-5 fs-4 fs-md-3 fs-lg-2">Sample Headline</h5>
                           <p class="fw-bold text-white mt-5">$150</p>
-                          <button type="button" class="btn btn-outline-light btn-lg mt-5" data-bs-toggle="modal" data-bs-target="#productModal">
+                          <button type="button" class="btn theme-adapt-btn btn-outline-light btn-lg mt-5" data-bs-toggle="modal" data-bs-target="#productModal">
                             View
                           </button>
+                          
 
                         </div>
                       </div>
@@ -271,9 +596,10 @@ body{
                         <div class="product-content ms-md-4 text-white">
                           <h5 class="mt-5 fs-4 fs-md-3 fs-lg-2">Sample Headline</h5>
                           <p class="fw-bold text-white mt-5">$170</p>
-                          <button type="button" class="btn btn-outline-light btn-lg mt-5" data-bs-toggle="modal" data-bs-target="#productModal">
+                          <button type="button" class="btn theme-adapt-btn btn-outline-light btn-lg mt-5" data-bs-toggle="modal" data-bs-target="#productModal">
                             View
                           </button>
+                          
                         </div>
                       </div>
                     </div>
@@ -287,9 +613,10 @@ body{
                           <div class="product-content ms-md-4 text-white">
                             <h5 class="mt-5 fs-4 fs-md-3 fs-lg-2">Sample Headline</h5>
                             <p class="fw-bold text-white mt-5">$150</p>
-                            <button type="button" class="btn btn-outline-light btn-lg mt-5" data-bs-toggle="modal" data-bs-target="#productModal">
+                            <button type="button" class="btn theme-adapt-btn btn-outline-light btn-lg mt-5" data-bs-toggle="modal" data-bs-target="#productModal">
                                 View
-                              </button>  
+                              </button>
+                               
                           </div>
                         </div>
                       </div>
@@ -303,9 +630,10 @@ body{
                           <div class="product-content ms-md-4 text-white">
                             <h5 class="mt-5 fs-4 fs-md-3 fs-lg-2">Sample Headline</h5>
                             <p class="fw-bold text-white mt-5">$170</p>
-                            <button type="button" class="btn btn-outline-light btn-lg mt-5" data-bs-toggle="modal" data-bs-target="#productModal">
+                            <button type="button" class="btn theme-adapt-btn btn-outline-light btn-lg mt-5" data-bs-toggle="modal" data-bs-target="#productModal">
                                 View
-                              </button>  
+                              </button>
+                              
                           </div>
                         </div>
                       </div>
@@ -317,9 +645,10 @@ body{
                           <div class="product-content ms-md-4 text-white">
                             <h5 class="mt-5 fs-4 fs-md-3 fs-lg-2">Sample Headline</h5>
                             <p class="fw-bold text-white mt-5">$150</p>
-                            <button type="button" class="btn btn-outline-light btn-lg mt-5" data-bs-toggle="modal" data-bs-target="#productModal">
+                            <button type="button" class="btn theme-adapt-btn btn-outline-light btn-lg mt-5" data-bs-toggle="modal" data-bs-target="#productModal">
                                 View
-                              </button>  
+                              </button>
+                               
                           </div>
                         </div>
                       </div>
@@ -333,9 +662,10 @@ body{
                           <div class="product-content ms-md-4 text-white">
                             <h5 class="mt-5 fs-4 fs-md-3 fs-lg-2">Sample Headline</h5>
                             <p class="fw-bold text-white mt-5">$170</p>
-                            <button type="button" class="btn btn-outline-light btn-lg mt-5" data-bs-toggle="modal" data-bs-target="#productModal">
+                            <button type="button" class="btn theme-adapt-btn btn-outline-light btn-lg mt-5" data-bs-toggle="modal" data-bs-target="#productModal">
                                 View
-                              </button>  
+                              </button>
+                              
                           </div>
                         </div>
                       </div>
@@ -347,9 +677,10 @@ body{
                           <div class="product-content ms-md-4 text-white">
                             <h5 class="mt-5 fs-4 fs-md-3 fs-lg-2">Sample Headline</h5>
                             <p class="fw-bold text-white mt-5">$150</p>
-                            <button type="button" class="btn btn-outline-light btn-lg mt-5" data-bs-toggle="modal" data-bs-target="#productModal">
+                            <button type="button" class="btn theme-adapt-btn btn-outline-light btn-lg mt-5" data-bs-toggle="modal" data-bs-target="#productModal">
                                 View
-                              </button>  
+                              </button>
+                               
                           </div>
                         </div>
                       </div>
@@ -363,9 +694,10 @@ body{
                           <div class="product-content ms-md-4 text-white">
                             <h5 class="mt-5 fs-4 fs-md-3 fs-lg-2">Sample Headline</h5>
                             <p class="fw-bold text-white mt-5">$170</p>
-                            <button type="button" class="btn btn-outline-light btn-lg mt-5" data-bs-toggle="modal" data-bs-target="#productModal">
+                            <button type="button" class="btn theme-adapt-btn btn-outline-light btn-lg mt-5" data-bs-toggle="modal" data-bs-target="#productModal">
                                 View
-                              </button>  
+                              </button>
+                              
                           </div>
                         </div>
                       </div>
@@ -375,7 +707,7 @@ body{
                   </div>
                 </div>
               </section>
-              <footer class="mt-5">
+              <footer class="mt-5 site-footer">
                 <section class="footer overflow-hidden p-relative z-1" style="background-color: black;">
                     <div class="container">
                         <div class="row footer__wrap p-relative">
@@ -540,10 +872,14 @@ body{
             </div>
             </div>
 
-            <div id="scroll-percentage"><span id="scroll-percentage-value"></span></div>
+            <div id="scroll-percentage" class="stay-dark text-dark">
+                <span id="scroll-percentage-value"></span>
+              </div>
+              
+              
 
 
-            <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true" >
+            <div class="modal fade stay-dark" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true" >
                 <div class="modal-dialog modal-xl modal-dialog-centered">
                   <div class="modal-content bg-black text-white p-4" style="border: 2px solid white; border-radius: 0px;">
                     <div class="modal-header border-0">
@@ -606,8 +942,59 @@ body{
     <script src="product-slider.js"></script>
     <script src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
+    <!-- jQuery (Required by Owl Carousel) -->
+    <!-- Owl Carousel CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
+
+$(document).ready(function () {
+    console.log("DOM Ready");
+
+    // Ensure images loaded (optional but useful if images affect layout)
+    $(document).ready(function () {
+  const owl = $('.custom-carousel');
+
+  // Initialize the carousel
+  owl.owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,  // Disable Owl's default buttons
+    dots: true,
+    autoplay: true,              // ✅ Enable auto scroll
+    autoplayTimeout: 3000,       // ✅ Time between slides (in ms)
+    autoplayHoverPause: true, 
+    responsive: {
+      0: { items: 1 },
+      768: { items: 2 }
+    }
+  });
+
+  // Custom button handlers
+  $('.custom-next').click(function () {
+    owl.trigger('next.owl.carousel');
+  });
+
+  $('.custom-prev').click(function () {
+    owl.trigger('prev.owl.carousel');
+  });
+});
+
+
+    // Fallback in case owl-loaded is not applied
+    setTimeout(function () {
+      const owl = $('.custom-carousel');
+      if (!owl.hasClass('owl-loaded')) {
+        console.warn("⚠️ Owl didn't auto-load, applying manually.");
+        owl.addClass('owl-loaded').css('display', 'block');
+      }
+    }, 1500);
+  });
+
+
+
+
+
         document.addEventListener("DOMContentLoaded", () => {
             const lenis = new Lenis({
                 lerp: 0.8,
@@ -622,9 +1009,42 @@ body{
             requestAnimationFrame(raf);
         });
         AOS.init({
-    duration: 1000,
-    once: true,
+  duration: 1500,        // Animation duration (in milliseconds)
+  once: true,            // Animation happens only once
+  offset: 750,           // Trigger point in pixels before the section enters the viewport
+});
+
+
+const toggleButton = document.getElementById('theme-toggle');
+const body = document.body;
+
+toggleButton.addEventListener('click', () => {
+  body.classList.toggle('light-mode');
+
+  const isLightMode = body.classList.contains('light-mode');
+
+  // Update toggle button text and classes
+  if (isLightMode) {
+    toggleButton.textContent = '🌙 Night Mode';
+    toggleButton.classList.remove('btn-light');
+    toggleButton.classList.add('btn-dark');
+  } else {
+    toggleButton.textContent = '☀️ Day Mode';
+    toggleButton.classList.remove('btn-dark');
+    toggleButton.classList.add('btn-light');
+  }
+
+  // Toggle theme-aware buttons (e.g. "View" buttons)
+  document.querySelectorAll('.theme-adapt-btn').forEach(btn => {
+    btn.classList.toggle('btn-outline-light', !isLightMode);
+    btn.classList.toggle('btn-outline-dark', isLightMode);
   });
+});
+
+
+
     </script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
 </body>
 </html>
